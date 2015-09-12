@@ -5,12 +5,24 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DataBaseHelper a = new DataBaseHelper(getApplicationContext());
+        System.out.println("aqui3");
+        try {
+            System.out.println("aqui");
+            a.createDataBase();
+        } catch (IOException e) {
+            System.out.println("aqui1");
+            e.printStackTrace();
+        }
     }
 
     @Override
