@@ -39,6 +39,9 @@
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true"
+        android:singleLine="true"
+        android:onClick="myClickMenu" />
 
 </RelativeLayout>

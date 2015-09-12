@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import java.io.IOException;
 
@@ -23,6 +25,20 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("aqui1");
             e.printStackTrace();
         }
+
+    }
+
+    public void myClickMenu(View v){
+        setContentView(R.layout.menu);
+    }
+    public void myClickCliente(View v){
+        setContentView(R.layout.cliente);
+    }
+    public void myClickClientePedido(View v){
+        setContentView(R.layout.cliente_pedido_list);
+    }
+    public void myClickPedido(View v){
+        setContentView(R.layout.pedido_list);
     }
 
     @Override
